@@ -9,5 +9,5 @@ package com.example.car_booking_system.Model;
  * @author Admin
  */
 public class Car {
-    
+    public String name;
 }
