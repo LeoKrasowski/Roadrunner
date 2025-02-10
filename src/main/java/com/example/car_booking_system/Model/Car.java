@@ -9,5 +9,63 @@ package com.example.car_booking_system.Model;
  * @author Admin
  */
 public class Car {
-    public String name;
+    private String model;
+    private String licensePlate;
+    private TransmissionType transmission;
+    private EngineType engine;
+    private int seats;
+    private ClassType carType;
+    
+    
+    public Car(){
+    }
+    
+    public String getModel(){
+        return model;
+    }
+    
+    public String getLicensePlate(){
+        return licensePlate;
+    }
+    
+    public TransmissionType getTransmission(){
+        return transmission;
+    }
+    
+    public EngineType getEngine(){
+        return engine;
+    }
+    
+    public int getSeats(){
+        return seats;
+    }
+    
+    public ClassType getCarType(){
+        return carType;
+    }
+    
+    
+    public void setModel(String model){
+        this.model = model;
+    }
+    
+    public void setLincensePlate(String licensePlate){
+        this.licensePlate = licensePlate;
+    }
+    
+    public void setTransmission(TransmissionType transmission){
+        this.transmission = transmission;
+    }
+    
+    public void setEngine(EngineType engine){
+        this.engine = engine;
+    }
+    
+    public void setSeats(int seats){
+        this.seats = seats;
+    }
+    
+    public void setCarType(ClassType carType){
+        this.carType = carType;
+    }
 }
