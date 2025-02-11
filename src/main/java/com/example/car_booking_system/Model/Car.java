@@ -9,15 +9,21 @@ package com.example.car_booking_system.Model;
  * @author Admin
  */
 public class Car {
+    private Long id;
     private String model;
     private String licensePlate;
     private TransmissionType transmission;
     private EngineType engine;
     private int seats;
     private ClassType carType;
+    private boolean available = true;
     
     
     public Car(){
+    }
+    
+    public Long getId(){
+        return id;
     }
     
     public String getModel(){
@@ -44,6 +50,10 @@ public class Car {
         return carType;
     }
     
+    public boolean isAvailable(){
+        return available;
+    }
+    
     
     public void setModel(String model){
         this.model = model;
@@ -67,5 +77,9 @@ public class Car {
     
     public void setCarType(ClassType carType){
         this.carType = carType;
+    }
+    
+    public void setAvailable(boolean available){
+        this.available = available;
     }
 }

@@ -5,6 +5,6 @@
 package com.example.car_booking_system.Model;
 
 
-public class User {
+public class Customer {
     
 }
